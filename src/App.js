@@ -136,7 +136,7 @@ class App extends React.Component {
           <Grid container xs={12}  className={classes.header} style={{padding:'20px'}}>
             <Grid container xs={1}/>
             <Grid container lg={4} md={4} sm={4} xs={12} id="title" className={classes.title}>
-              <Typography>
+              <Typography style={{cursor:'pointer'}}>
                 <span className={classes.strat}>STRAT</span><span className={classes.gg}>.GG</span>
               </Typography>
             </Grid>
