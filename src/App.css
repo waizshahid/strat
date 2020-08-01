@@ -24,8 +24,53 @@ body {
   border: 1px solid #43437d !important;
   border-radius: .25rem;
   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-  box-shadow: none;
+  box-shadow: none !important;
 }
 button:focus {
   outline: none !important;
+}
+@media screen and (max-width:600px) {
+  #mainHeader,#boxes {
+    text-align: center;
+    text-align-last: center;
+  }
+  #boxWrapper {
+    margin-left: 1.5vh !important;
+  }
+  #formWrapper {
+    margin-top: 2rem !important;
+    max-width: 100%;
+    flex-basis: 100%;
+    padding: 0 1rem;
+  }
+  #headerContent {
+    margin-top: 5rem !important;
+  }
+  #boxes {
+    margin-top: 5rem !important;
+  }
+  #background {
+    background-image: url('./assets/background.png');
+    background-repeat: no-repeat;
+    
+  
+  }
+  #textfield {
+    max-width: 82.666667%;
+  }
+  #title {
+    justify-content: center !important;
+  }
+  #contact {
+    justify-content: flex-end !important;
+  }
+  #about {
+    justify-content: center !important;
+  }
+  #navWrapper {
+    padding-top: 1rem;
+  }
+}
+#textfield {
+  max-width: 69.666667%;
 }
