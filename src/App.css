@@ -1,5 +1,6 @@
 body {
   font-family: 'Poppins';
+  background-image: url('./assets/background.png');
 }
 #background {
   background-image: url('./assets/background.png');
@@ -35,7 +36,7 @@ button:focus {
     text-align-last: center;
   }
   #boxWrapper {
-    margin-left: 1.5vh !important;
+    margin-left: 7% !important;
   }
   #formWrapper {
     margin-top: 2rem !important;
@@ -52,7 +53,7 @@ button:focus {
   #background {
     background-image: url('./assets/background.png');
     background-repeat: no-repeat;
-    height: 106vh;
+    background-size: cover;
   }
   #textfield {
     max-width: 82.666667%;
@@ -72,4 +73,26 @@ button:focus {
 }
 #textfield {
   max-width: 69.666667%;
+}
+@media screen and (max-width:320px) {
+  .App-box-12 {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 15px;
+    max-width: 78px !important;
+    max-height: 120px;
+  }
+  #thirdBox {
+    margin-top:0rem;
+  }
+}
+@media screen and (max-width:769px) and (min-width:500px) {
+  .App-box-12 {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 15px;
+    max-width: 90px !important;
+    max-height: 120px;
+  }
+  #thirdBox {
+    margin-top:2rem;
+  }
 }

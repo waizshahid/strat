@@ -167,7 +167,7 @@ class App extends React.Component {
                 <Grid item xs={12} align='left' style={{}}>
                   <span className={classes.content}>Connect, watch, and befriend</span>
                 </Grid>
-                <Grid container xs={10} id="boxWrapper"  justify="space-between" style={{marginTop:'3rem',maxWidth:'400px',minWidth:'350px'}}>
+                <Grid container xs={10} id="boxWrapper"  justify="space-between" style={{marginTop:'3rem',maxWidth:'400px'}}>
                   <Grid container xs={4} md={4} sm={12} className={classes.box}>
                     <Grid item xs={12}>
                       <img width="20" src={(require('./assets/iconperson.png'))}/>
@@ -190,7 +190,7 @@ class App extends React.Component {
                       <span className={classes.boxContent}>Streamers</span>
                     </Grid>
                   </Grid>
-                  <Grid container xs={4} className={classes.box}>
+                  <Grid container xs={4} className={classes.box} id="thirdBox">
                     <Grid item xs={12}>
                       <img width="20" src={(require('./assets/iconperson.png'))}/>
                     </Grid>
@@ -206,7 +206,7 @@ class App extends React.Component {
             </Grid>
             <Grid container lg={3} md={3} sm={3} xs={0} />
             <Grid container lg={4} md={4} sm={4} xs={12}>
-              <Grid container xs={9} id="formWrapper" style={{marginTop:'8rem',height:'250px'}}>
+              <Grid container xs={9} id="formWrapper" style={{marginTop:'8rem'}}>
                 <Grid item xs={6} className={classes.formHeaderWrapper} id="formHeaderWrapper" onClick={() => {this.signupForm();}}>
                   <span className={classes.formHeader2} >Sign up</span>
                 </Grid>
@@ -283,7 +283,7 @@ class App extends React.Component {
                 </div>
                 </Grid>
                 
-                <Grid item xs={12} align='right' style={{marginTop:'1rem'}}>   
+                <Grid item xs={12} align='right' style={{marginTop:'1rem',marginBottom:'1rem'}}>   
                   <button className={classes.button}>REGISTER</button>
                 </Grid>
                 </Grid>
